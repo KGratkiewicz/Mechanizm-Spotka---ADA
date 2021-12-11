@@ -1,12 +1,17 @@
-# Mechanizm spotkań ADA
+# "Idź na randkę z Adą", czyli mechanizm spotkań w języku ADA
 Program pokazujący rozwiązanie synchronizacji dostępu do sekcji krytycznej poprzez mechanizm spotkań w języku ADA.
 
 Plik projektowy ze środowiska [GNAT Studio | Adacore](https://www.adacore.com/gnatpro/toolsuite/gnatstudio).
 
-Zobacz też inne rozwiązanie tego zadania -> [Algorytm Petersona](https://github.com/KGratkiewicz/Algorytm-Dekkera-ADA.git) <- algorytmen Dekkera !
-
 ### Problem wzajemnego wykluczania
 Problem wzajemnego wykluczania występuje wtedy kiedy conajmniej dwa procesy, chcą skorzystać z zasobu współdzielonego. Muszą one jednak skorzystać z niego jeden po drugim, aby nie "wtrącać się" jeden drugiemu. Dostęp do takiego zasobu współdzielonego nazywa się sekcją krytyczną procesu. W naszym przypadku zasobem współdzielonym jest ekran konsoli.
+
+
+## Treść zadania
+Ćwiczenie 3 - Utworzyć 2 zadania tego samego typu zadaniowego wypisujące na ekranie w 2 kolumnach po 10 razy: _"Zadanie nr po raz k"_ gdzie k- aktualna iteracja, nr - numer zadania. Wprowadzić przerwy pomiędzy interacjami o losowej długości. Do synchronizacji użyj mechanizmu spotkań.
+
+## Działanie programu
+Program swoją *sekcję lokalną* symuluje poprzez wykonanie opóźnienia `delay` o losowym czasie trwania. W *sekcji krytycznej* program jest dopuszczany do wykonania wypisania na ekranie. W przypadku niezastosowania synchronizacji dostępu do ekranu konsoli, możemy otrzymać wypisane ciągi procesu P1 wraz z ciągiem procesu P2.
 
 ## Mechanizm spotkań
 Mechanizm spotkań w języku ADA polega na odwoływaniu się przez procesy (task) do procesu biernego, który kolejno oczekuje wywołania wejść. W przypadku tego zadania wykorzystano jako proces bierny następujące zadanie:
@@ -37,12 +42,9 @@ Moment krytyczny zadania:
          Serwer.Zwolnij;
 ```
 
+Dowiedz się więcej o mechaniźmie spotkać w Adzie -> [Spotkania (randki) w Adzie](https://wazniak.mimuw.edu.pl/index.php?title=Programowanie_wsp%C3%B3%C5%82bie%C5%BCne_i_rozproszone/PWR_Wyk%C5%82ad_4) 
 
-## Treść zadania
-Ćwiczenie 3 - Utworzyć 2 zadania tego samego typu zadaniowego wypisujące na ekranie w 2 kolumnach po 10 razy: _"Zadanie nr po raz k"_ gdzie k- aktualna iteracja, nr - numer zadania. Wprowadzić przerwy pomiędzy interacjami o losowej długości. Do synchronizacji użyj mechanizmu spotkań.
-
-## Działanie programu
-Program swoją *sekcję lokalną* symuluje poprzez wykonanie opóźnienia `delay` o losowym czasie trwania. W *sekcji krytycznej* program jest dopuszczany do wykonania wypisania na ekranie. W przypadku niezastosowania synchronizacji dostępu do ekranu konsoli, możemy otrzymać wypisane ciągi procesu P1 wraz z ciągiem procesu P2.
+Zobacz też inne rozwiązanie tego zadania -> [Algorytm Petersona](https://github.com/KGratkiewicz/Algorytm-Dekkera-ADA.git) <- algorytmen Dekkera !
 
 ### Output działania programu
 ```
