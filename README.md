@@ -81,7 +81,7 @@ Zadanie               Zadanie  2 po raz  8 1
                       Zadanie  2 po raz 10Zadanie  1 po raz 10
 ```
 
-### Kod żródłowy 
+### Kod źródłowy 
 
 lokalizajca:
 
