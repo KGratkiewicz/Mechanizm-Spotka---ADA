@@ -44,7 +44,7 @@ Moment krytyczny zadania:
 
 Dowiedz się więcej o mechaniźmie spotkać w Adzie -> [Spotkania (randki) w Adzie](https://wazniak.mimuw.edu.pl/index.php?title=Programowanie_wsp%C3%B3%C5%82bie%C5%BCne_i_rozproszone/PWR_Wyk%C5%82ad_4) 
 
-Zobacz też inne rozwiązanie tego zadania -> [Algorytm Petersona](https://github.com/KGratkiewicz/Algorytm-Dekkera-ADA.git) <- algorytmen Dekkera !
+Zobacz też inne rozwiązanie tego zadania -> [Algorytm Dekkera](https://github.com/KGratkiewicz/Algorytm-Dekkera-ADA.git) <- algorytmen Dekkera !
 
 ### Output działania programu
 ```
