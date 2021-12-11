@@ -1,0 +1,1 @@
+# Mechanizm-Spotka---ADA
